@@ -1,10 +1,11 @@
 # simple mysql-server
 
-`git clone https://github.com/georgeosddev/vagrantmysql.git`
-`cd vagrantmysql`
-`vagrant up`
+1. `git clone https://github.com/georgeosddev/vagrantmysql.git`
+2. `cd vagrantmysql`
+3. `vagrant up`
 
 **Notice**
+
 This error will happen at first
 
 		/usr/bin/chef-solo:19
@@ -18,3 +19,8 @@ This error will happen at first
 So retry
 
 `vagrant provision`
+
+Connect to mysql from Host OS.
+
+`bin/mysql -u root -h mysql.local -p` (password=p@ssw0rd)
+
